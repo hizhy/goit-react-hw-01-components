@@ -40,8 +40,6 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
   );
 };
 
-// export default (Profile)
-
 Profile.propTypes = {
   username: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
