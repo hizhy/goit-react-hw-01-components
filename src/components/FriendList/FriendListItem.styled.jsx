@@ -9,25 +9,22 @@ export const Item = styled.li`
   background-color: beige;
   box-shadow: 3px 3px 9px 3px #000000;
 `;
+const StatusColor = props => {
+  return props.eventType ? 'green' : 'red';
+};
 
 export const Status = styled.span`
   width: 20px;
   height: 20px;
   margin-right: 15px;
   border-radius: 50%;
-`;
-export const IsOffline = styled.span`
-  background-color: red;
-`;
-
-export const IsOnline = styled.span`
-  background-color: green;
+  background-color: ${StatusColor};
 `;
 
 export const Avatar = styled.img`
   margin-right: 20px;
 `;
 export const Name = styled.p`
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
 `;
